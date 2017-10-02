@@ -59,6 +59,7 @@
   <ItemGroup>
     <Compile Include="4Kyu\Roman_Numerals_Decoder.cs" />
     <Compile Include="6Kyu\Find_the_odd_int.cs" />
+    <Compile Include="7Kyu\Exes_and_Ohs.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
@@ -76,6 +77,9 @@
       <ProductName>.NET Framework 3.5 SP1</ProductName>
       <Install>false</Install>
     </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Cosas\SplitArray.txt" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

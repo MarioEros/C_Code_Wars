@@ -1,12 +1,8 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace Pruebas
 {
-    class Roman_Numerals_Decoder
+    public class Roman_Numerals_Decoder
     {
         public static int Solution(String s)
         {
