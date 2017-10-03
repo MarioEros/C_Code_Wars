@@ -5,3 +5,10 @@ C:\Users\Eros\source\repos\CSharp_Code_Wars\Pruebas\obj\Debug\Pruebas.csprojReso
 C:\Users\Eros\source\repos\CSharp_Code_Wars\Pruebas\obj\Debug\Pruebas.csproj.CoreCompileInputs.cache
 C:\Users\Eros\source\repos\CSharp_Code_Wars\Pruebas\obj\Debug\Pruebas.exe
 C:\Users\Eros\source\repos\CSharp_Code_Wars\Pruebas\obj\Debug\Pruebas.pdb
+C:\Users\Eros\source\repos\C_Code_Wars\Pruebas\bin\Debug\Pruebas.exe.config
+C:\Users\Eros\source\repos\C_Code_Wars\Pruebas\bin\Debug\Pruebas.exe
+C:\Users\Eros\source\repos\C_Code_Wars\Pruebas\bin\Debug\Pruebas.pdb
+C:\Users\Eros\source\repos\C_Code_Wars\Pruebas\obj\Debug\Pruebas.csprojResolveAssemblyReference.cache
+C:\Users\Eros\source\repos\C_Code_Wars\Pruebas\obj\Debug\Pruebas.csproj.CoreCompileInputs.cache
+C:\Users\Eros\source\repos\C_Code_Wars\Pruebas\obj\Debug\Pruebas.exe
+C:\Users\Eros\source\repos\C_Code_Wars\Pruebas\obj\Debug\Pruebas.pdb

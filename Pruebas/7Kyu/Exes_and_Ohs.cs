@@ -4,13 +4,13 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Pruebas._7Kyu
+namespace Pruebas
 {
     public class Exes_and_Ohs
     {
         public static bool XO(string input)
         {
-            return input.ToUpper().Count();
-  }
+            return input.ToLower().Count(x=>x=='o')==input.ToLower().Count(x=>x=='x');
+        }
     }
 }
