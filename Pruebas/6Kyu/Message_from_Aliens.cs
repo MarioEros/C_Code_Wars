@@ -10,17 +10,15 @@ namespace Pruebas
     {
         public static string Decode(string m)
         {
-            Console.WriteLine(m);
             char[] caractitos = { ']', '}', '.', '{', '\'', '+' };
             string[] sol = m.Split(caractitos);
             string solucionqueflipas = "";
-            foreach (string cul in sol) solucionqueflipas= Alfa(cul)+solucionqueflipas;
+            foreach (string cul in sol) solucionqueflipas = Alfa(cul) + solucionqueflipas;
             return solucionqueflipas;
         }
 
         public static string Alfa(string hey)
         {
-            Console.WriteLine(hey);
             switch (hey)
             {
                 case "/\\": return "a";
@@ -36,12 +34,12 @@ namespace Pruebas
                 case "/<": return "k";
                 case "|_": return "l";
                 case "|\\/|": return "m";
-                case @"|\\|": return "n";
+                case "|\\|": return "n";
                 case "()": return "o";
                 case "|^": return "p";
                 case "()_": return "q";
                 case "/?": return "r";
-                case @"_\\~": return "s";
+                case "_\\~": return "s";
                 case "~|~": return "t";
                 case "|_|": return "u";
                 case "\\/": return "v";
