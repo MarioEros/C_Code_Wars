@@ -13,7 +13,8 @@ namespace Pruebas
                 if ("FIN".Equals(pruebas.ToUpper())) break;
                 //string[] divi = pruebas.Split('*');
                 //int[] num = new int[divi.Length];
-                List<int>res = new List<int>();
+
+                /*List<int>res = new List<int>();
                 res.Add(1);
                 res.Add(2);
                 res.Add(4);
@@ -24,9 +25,18 @@ namespace Pruebas
                 res.Add(-2);
                 res.Add(-1);
                 res.Add(-3);
+                foreach (int item in res)
+                {
+                    Console.WriteLine(item);
+                }
+                string hola = @"C:\Usuarios\GenteSuperGuay";
+                string quepa = "C:\\Usuarios\\GenteSuperGuay";
+                Console.WriteLine(@"C:\Usuarios\GenteSuperGuay");
+                Console.WriteLine(hola);
+                Console.WriteLine(quepa+@"\YoMismo");*/
 
                 //for (int i = 0; i < divi.Length; i++) num[i] = int.Parse(divi[i]);
-                Console.WriteLine(zero_balanced_Array.IsZeroBalanced(res));
+                Console.WriteLine(Wo_lo_loooooo.AlphabetWar(pruebas));
 
             }
         }
