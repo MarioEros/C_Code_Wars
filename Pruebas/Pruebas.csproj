@@ -71,6 +71,7 @@
     <Compile Include="7Kyu\Insert_dashes.cs" />
     <Compile Include="7Kyu\Remove_Url.cs" />
     <Compile Include="7Kyu\Reversed_Strings.cs" />
+    <Compile Include="7Kyu\Sum_of_a_sequence.cs" />
     <Compile Include="7Kyu\zero-balanced_Array.cs" />
     <Compile Include="8Kyu\Calculate_Average.cs" />
     <Compile Include="Program.cs" />
