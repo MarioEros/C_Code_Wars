@@ -60,6 +60,7 @@
     <Compile Include="4Kyu\Adding_Big_Numbers.cs" />
     <Compile Include="4Kyu\Roman_Numerals_Decoder.cs" />
     <Compile Include="4Kyu\Sortable_Poker_Hands.cs" />
+    <Compile Include="4Kyu\Sum_by_Factors.cs" />
     <Compile Include="4Kyu\Sum_Strings.cs" />
     <Compile Include="5Kyu\Human_Readable_Time.cs" />
     <Compile Include="5Kyu\Wo_lo_loooooo.cs" />

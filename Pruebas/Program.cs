@@ -36,7 +36,7 @@ namespace Pruebas
                 Console.WriteLine(quepa+@"\YoMismo");*/
 
                 //for (int i = 0; i < divi.Length; i++) num[i] = int.Parse(divi[i]);
-                Console.WriteLine(Wo_lo_loooooo.AlphabetWar(pruebas));
+                Console.WriteLine(Sum_by_Factors.sumOfDivided(new int[]{0,1}));
 
             }
         }
