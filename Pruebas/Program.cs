@@ -13,7 +13,7 @@ namespace Pruebas
                 if ("FIN".Equals(pruebas.ToUpper())) break;
                 //string[] divi = pruebas.Split('*');
                 //int[] num = new int[divi.Length];
-
+                //for (int i = 0; i < divi.Length; i++) num[i] = int.Parse(divi[i]);
                 /*List<int>res = new List<int>();
                 res.Add(1);
                 res.Add(2);
@@ -36,7 +36,9 @@ namespace Pruebas
                 Console.WriteLine(quepa+@"\YoMismo");*/
 
                 //for (int i = 0; i < divi.Length; i++) num[i] = int.Parse(divi[i]);
-                Console.WriteLine(Sum_by_Factors.sumOfDivided(new int[]{0,1}));
+                //Console.WriteLine(Sum_by_Factors.sumOfDivided(num));
+                SnakesAndLadders S1 = new SnakesAndLadders();
+                Console.WriteLine(S1.play(1,1));
 
             }
         }

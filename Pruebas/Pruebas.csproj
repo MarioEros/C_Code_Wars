@@ -63,6 +63,7 @@
     <Compile Include="4Kyu\Sum_by_Factors.cs" />
     <Compile Include="4Kyu\Sum_Strings.cs" />
     <Compile Include="5Kyu\Human_Readable_Time.cs" />
+    <Compile Include="5Kyu\SnakesAndLadders.cs" />
     <Compile Include="5Kyu\Wo_lo_loooooo.cs" />
     <Compile Include="6Kyu\CamelCase_Method.cs" />
     <Compile Include="6Kyu\Find_the_odd_int.cs" />
@@ -70,11 +71,15 @@
     <Compile Include="6Kyu\PatternCraft_Decorator.cs" />
     <Compile Include="7Kyu\Exes_and_Ohs.cs" />
     <Compile Include="7Kyu\Insert_dashes.cs" />
+    <Compile Include="7Kyu\Lowercase_strings_array.cs" />
+    <Compile Include="7Kyu\Mumbling.cs" />
     <Compile Include="7Kyu\Remove_Url.cs" />
     <Compile Include="7Kyu\Reversed_Strings.cs" />
     <Compile Include="7Kyu\Sum_of_a_sequence.cs" />
+    <Compile Include="7Kyu\Sum_of_two_lowest_positive_integers.cs" />
     <Compile Include="7Kyu\zero-balanced_Array.cs" />
     <Compile Include="8Kyu\Calculate_Average.cs" />
+    <Compile Include="8Kyu\Count_Odd_Numbers_below_n.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
