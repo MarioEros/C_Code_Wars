@@ -35,10 +35,8 @@ namespace Pruebas
                 Console.WriteLine(hola);
                 Console.WriteLine(quepa+@"\YoMismo");*/
 
-                //for (int i = 0; i < divi.Length; i++) num[i] = int.Parse(divi[i]);
-                //Console.WriteLine(Sum_by_Factors.sumOfDivided(num));
-                SnakesAndLadders S1 = new SnakesAndLadders();
-                Console.WriteLine(S1.play(1,1));
+                Console.WriteLine(IP_Validation.is_valid_IP(pruebas));
+
 
             }
         }
