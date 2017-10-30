@@ -57,6 +57,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="3Kyu\Molecule_to_atoms.cs" />
     <Compile Include="4Kyu\Adding_Big_Numbers.cs" />
     <Compile Include="4Kyu\IP_Validation.cs" />
     <Compile Include="4Kyu\Pascal_Triangle.cs" />

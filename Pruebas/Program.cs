@@ -14,11 +14,10 @@ namespace Pruebas
                 //string[] divi = pruebas.Split('*');
                 //int[] num = new int[divi.Length];
                 //for (int i = 0; i < divi.Length; i++) num[i] = int.Parse(divi[i]);
-                List<object> lista = new List<object>() { 1, 2, "a", "b", "aasf", "1", "123", 231 };
-                IEnumerable<int> numeros = List_Filtering.GetIntegersFromList(lista);
-                foreach (var item in numeros)
+                Dictionary<string, int> diccio = Molecule_to_atoms.ParseMolecule(pruebas);
+                foreach (var item in diccio)
                 {
-                    Console.WriteLine(item);
+                    Console.WriteLine(item.Key+" "+item.Value);
                 }
             }
         }
