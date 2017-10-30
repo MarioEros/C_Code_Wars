@@ -63,7 +63,7 @@ namespace Pruebas
 
         public class MarineArmorUpgrade : IMarine
         {
-            private IMarine marine;//
+            private IMarine marine;
 
             public MarineArmorUpgrade(IMarine marine)
             {
