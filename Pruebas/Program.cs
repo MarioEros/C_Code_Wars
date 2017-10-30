@@ -14,10 +14,12 @@ namespace Pruebas
                 //string[] divi = pruebas.Split('*');
                 //int[] num = new int[divi.Length];
                 //for (int i = 0; i < divi.Length; i++) num[i] = int.Parse(divi[i]);
-
-                Console.WriteLine(IP_Validation.is_valid_IP(pruebas));
-
-
+                List<object> lista = new List<object>() { 1, 2, "a", "b", "aasf", "1", "123", 231 };
+                IEnumerable<int> numeros = List_Filtering.GetIntegersFromList(lista);
+                foreach (var item in numeros)
+                {
+                    Console.WriteLine(item);
+                }
             }
         }
     }

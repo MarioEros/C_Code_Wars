@@ -72,6 +72,7 @@
     <Compile Include="6Kyu\Find_the_odd_int.cs" />
     <Compile Include="6Kyu\Message_from_Aliens.cs" />
     <Compile Include="6Kyu\PatternCraft_Decorator.cs" />
+    <Compile Include="6Kyu\PatternCraft_Strategy.cs" />
     <Compile Include="7Kyu\Basic_Calculator.cs" />
     <Compile Include="7Kyu\Exes_and_Ohs.cs" />
     <Compile Include="7Kyu\Get_the_Middle_Character.cs" />
@@ -79,6 +80,9 @@
     <Compile Include="7Kyu\List_Filtering.cs" />
     <Compile Include="7Kyu\Lowercase_strings_array.cs" />
     <Compile Include="7Kyu\Mumbling.cs" />
+    <Compile Include="6Kyu\PatternCraft_State.cs" />
+    <Compile Include="7Kyu\PatternCraft_Adapter.cs" />
+    <Compile Include="7Kyu\PatternCraft_Visitor.cs" />
     <Compile Include="7Kyu\Remove_Url.cs" />
     <Compile Include="7Kyu\Reversed_Strings.cs" />
     <Compile Include="7Kyu\Sum_of_a_sequence.cs" />
