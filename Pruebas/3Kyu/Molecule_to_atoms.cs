@@ -16,128 +16,37 @@ namespace Pruebas
             //C6H12O6       Expected: < [C, 6], [H, 12], [O, 6] >
             //              But was:  < [O, 6], [H, 492], [C, 6] >
             //(C5H5)Fe(CO)2CH3 da fallo porque aplica el exp del lado derecho a ambos parentesis
+            //((H)2[O])
             Dictionary<string, int> diccio = new Dictionary<string, int>();
-            List<string> formDiv = new List<string>(formula.Split(new char[] { '(', ')', '[', ']', '{', '}' }));
-            int indice = 1;
-            while (formDiv.Count > 0)
+            List<String> lista = new List<string>(Regex.Split(formula, @"([\{\[\(][A-Za-z0-9]*[\}\]\)])"));
+            lista.RemoveAll(a => a == " "|| a== "");
+            //(C5H5)    Fe  (CO)    2CH3
+            while (lista.Count > 1)
             {
-                string palabra = formDiv[0];
-                char[] valor = new char[palabra.Length];
-                for (int i = 0; i < palabra.Length; i++)
+                int exponente = 1;
+                for (int i = 0; i > lista.Count; i++)
                 {
-                    if (Char.IsDigit(palabra[i])) valor[i] = 'd';
-                    else if (Char.IsLower(palabra[i])) valor[i] = 'b';
-                    else if (Char.IsUpper(palabra[i])) valor[i] = 'A';
-                    else
+                    //(C5H5),(CO)
+                    if ((lista[i].StartsWith("(") && lista[i].EndsWith(")"))||(lista[i].StartsWith("[") && lista[i].EndsWith("]"))||(lista[i].StartsWith("{") && lista[i].EndsWith("}")))
                     {
-                        valor[i] = 'Z';
-                        Console.WriteLine("Cosa ni numero,ni minus, ni Mayus");
+                        if(i+1<lista.Count)exponente = encuentraNum(lista[i + 1]);
+                        List<String> Atomos = new List<string>(Regex.Split(lista[i], @"([A-Z][a-z]{0,2}[0-9]*)"));
+                        Atomos.RemoveAll(a => a == "{" || a == "(" || a == "[" || a == " " || a == "" || a == ")" || a == "]" || a == "}");
+                        //C5    H5
                     }
                 }
-                for (int i = palabra.Length - 1; i > -1; i--)
-                {
-                    int exp = 1;
-                    if (valor[i] == 'd')
-                    {
-                        exp = exp * int.Parse(palabra[i].ToString());
-                        if (valor[i - 1] == 'd')
-                        {
-                            exp += (int.Parse(palabra[i-1].ToString()) * 10);
-                            if (valor[i - 2] == 'b')
-                            {
-                                diccio.AddOrSum(palabra.Substring(i - 3, 2), exp * indice);
-                                i -= 3;
-                            }
-                            else
-                            {
-                                diccio.AddOrSum(palabra[i - 2].ToString(), exp * indice);
-                                i -= 2;
-                            }
-                        }
-                        else if (valor[i - 1] == 'b')
-                        {
-                            diccio.AddOrSum(palabra.Substring(i - 2, 2), exp * indice);
-                            i -= 2;
-                        }
-                        else
-                        {
-                            diccio.AddOrSum(palabra[i - 1].ToString(), exp * indice);
-                            i--;
-                        }
-                    }
-                    else if (valor[i] == 'b')
-                    {
-                        diccio.AddOrSum(palabra.Substring(i - 1, 2), exp * indice);
-                        i--;
-                    }
-                    else
-                    {
-                        diccio.AddOrSum(palabra[i].ToString(), exp * indice);
-                    }
-                }
-                formDiv.RemoveAt(0);
-                if (formDiv.Count==0)break;
-                palabra=formDiv[formDiv.Count-1];
-                valor= new char[palabra.Length];
-                for (int i = 0; i < palabra.Length; i++)
-                {
-                    if (Char.IsDigit(palabra[i])) valor[i] = 'd';
-                    else if (Char.IsLower(palabra[i])) valor[i] = 'b';
-                    else if (Char.IsUpper(palabra[i])) valor[i] = 'A';
-                    else
-                    {
-                        valor[i] = 'Z';
-                        Console.WriteLine("Cosa ni numero,ni minus, ni Mayus");
-                    }
-                }
-                for (int i = palabra.Length - 1; i > -1; i--)
-                {
-                    int exp = 1;
-                    if (i==0 && valor[i] == 'd')
-                    {
-                        indice =indice*int.Parse(palabra[i].ToString());
-                    }
-                    else if (valor[i] == 'd')
-                    {
-                        exp = exp * int.Parse(palabra[i].ToString());
-                        if (valor[i - 1] == 'd')
-                        {
-                            exp += (int.Parse(palabra[i - 1].ToString()) * 10);
-                            if (valor[i - 2] == 'b')
-                            {
-                                diccio.AddOrSum(palabra.Substring(i - 3, 2), exp * indice);
-                                i -= 3;
-                            }
-                            else
-                            {
-                                diccio.AddOrSum(palabra[i - 2].ToString(), exp * indice);
-                                i -= 2;
-                            }
-                        }
-                        else if (valor[i - 1] == 'b')
-                        {
-                            diccio.AddOrSum(palabra.Substring(i - 2, 2), exp * indice);
-                            i -= 2;
-                        }
-                        else
-                        {
-                            diccio.AddOrSum(palabra[i - 1].ToString(), exp * indice);
-                            i--;
-                        }
-                    }
-                    else if (valor[i] == 'b')
-                    {
-                        diccio.AddOrSum(palabra.Substring(i - 1, 2), exp * indice);
-                        i--;
-                    }
-                    else
-                    {
-                        diccio.AddOrSum(palabra[i].ToString(), exp * indice);
-                    }
-                }
-                formDiv.RemoveAt(formDiv.Count-1);
             }
             return diccio;
+        }
+        public static int encuentraNum(string num)
+        {
+            for (int i = 0; i < num.Length; i++)
+            {
+                if (!char.IsDigit(num[i])) break;
+                else if (i + 1 < num.Length && char.IsDigit(num[i + 1])) return int.Parse(num.Substring(i, 2));
+                else return int.Parse(num.Substring(i, 1));
+            }
+            return 1;
         }
     }
     public static class Dico
