@@ -14,25 +14,16 @@ namespace Pruebas
             //StreamWriter sw= new StreamWriter(fs);
             //sw.WriteLine("hola caracola");
             //sw.Close();
-            while(true)
+            /*while(true)
             {
                 string pruebas = Console.ReadLine();//sr.ReadLine();
                 if ("FIN".Equals(pruebas.ToUpper())) break;
                 //string[] divi = pruebas.Split('*');
                 //int[] num = new int[divi.Length];
                 //for (int i = 0; i < divi.Length; i++) num[i] = int.Parse(divi[i]);
-                string input = "H2(CO2)334Rtt";
-                var output = Regex.Replace(input, @"([\{\[\(][A-Za-z0-9]*[\}\]\)][0-9]+)", m =>
-                {
-                    string[] ret= new List<string>(Regex.Split(m.Value, @"[A-Z][a-z]+[0-9]*")).FindAll(a=> Regex.IsMatch(a, @"[A-Z][a-z]+|[0-9]+")).ToArray();
-                    foreach (var item in ret)
-                    {
-                        Console.WriteLine(item);
-                    }
-                    return "1";
-                });
-                Console.WriteLine(output);
-            }
+                
+            }*/
+            Console.WriteLine(Sum_of_odd_cubed_numbers.CubeOdd(new int[] { -3, -2, 2, 3}));
         }
         public static int encuentraNum(string num)
         {

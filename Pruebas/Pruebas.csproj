@@ -87,7 +87,9 @@
     <Compile Include="7Kyu\Remove_Url.cs" />
     <Compile Include="7Kyu\Reversed_Strings.cs" />
     <Compile Include="7Kyu\Sum_of_a_sequence.cs" />
+    <Compile Include="7Kyu\Sum_of_odd_cubed_numbers.cs" />
     <Compile Include="7Kyu\Sum_of_two_lowest_positive_integers.cs" />
+    <Compile Include="7Kyu\Unique_sum.cs" />
     <Compile Include="7Kyu\zero-balanced_Array.cs" />
     <Compile Include="8Kyu\Calculate_Average.cs" />
     <Compile Include="8Kyu\Count_Odd_Numbers_below_n.cs" />
