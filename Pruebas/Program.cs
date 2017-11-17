@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Text.RegularExpressions;
 using System.IO;
+using System.Linq;
 
 namespace Pruebas
 {
@@ -23,13 +24,8 @@ namespace Pruebas
                 //for (int i = 0; i < divi.Length; i++) num[i] = int.Parse(divi[i]);
                 
             }*/
-            Console.WriteLine(Sum_of_odd_cubed_numbers.CubeOdd(new int[] { -3, -2, 2, 3}));
+            Console.WriteLine(Reversed_Words.ReverseWords("hola majo"));
         }
-        public static int encuentraNum(string num)
-        {
-            int i = 0;
-            while (i<num.Length&&Char.IsDigit(num[i])) i++;
-            return (i==0?1:int.Parse(num.Substring(0,i)));
-        }
+        
     }
 }

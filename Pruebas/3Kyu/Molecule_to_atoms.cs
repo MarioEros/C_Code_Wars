@@ -92,3 +92,44 @@ namespace Pruebas
         }
     }
 }
+
+
+/*public static Dictionary<string, int> ParseMolecule(string formula)
+        {
+            Dictionary<string, int> diccio = new Dictionary<string, int>();
+            while (formula.IndexOfAny(new char[] { '(', '[', '{' }) != -1)
+            {
+                List<string> formulaDiv = new List<string>(Regex.Split(formula, @"([\{\[\(][A-Za-z0-9]*[\}\]\)])"));
+                formulaDiv.RemoveAll(a => a == "" || a == " ");
+                formulaDiv = (from x in formulaDiv select !Regex.IsMatch(x, @"([\{\[\(][A-Za-z0-9]*[\}\]\)])")?x:Atomizar(x)).ToList();
+                List<String> Atomos = new List<string>(Regex.Split(formula, @"([A-Z][a-z]*[0-9]*)"));
+
+                List<String> At = new List<String>(Regex.Split(Atomos[j], @"([0-9]+)"));
+
+            }
+
+            List<String> AtSplit = new List<string>(Regex.Split(formula, "([A-Z][a-z]*[0-9]*)"));
+            AtSplit.RemoveAll(a => a == "" || a == " ");
+            foreach (String item in AtSplit)
+            {
+                diccio.AddOrSum(item);
+            }
+            return diccio;
+        }
+        public static string Atomizar(string x)
+        {
+            return "x";
+        }
+        public static int encuentraNum(string num)
+        {
+            int i = 0;
+            while (i < num.Length && Char.IsDigit(num[i])) i++;
+            return (i == 0 ? 1 : int.Parse(num.Substring(0, i)));
+        }
+        public static int encuentraNum(string num)
+        {
+            int i = 0;
+            while (i<num.Length&&Char.IsDigit(num[i])) i++;
+            return (i==0?1:int.Parse(num.Substring(0,i)));
+        }
+*/

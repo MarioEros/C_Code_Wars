@@ -2,8 +2,10 @@
   "ExpandedNodes": [
     "",
     "\\Pruebas",
-    "\\Pruebas\\3Kyu"
+    "\\Pruebas\\3Kyu",
+    "\\Pruebas\\bin\\Debug",
+    "\\Pruebas\\Properties"
   ],
-  "SelectedNode": "\\Pruebas\\TextoPruebas.txt",
+  "SelectedNode": "\\Pruebas\\bin",
   "PreviewInSolutionExplorer": false
 }

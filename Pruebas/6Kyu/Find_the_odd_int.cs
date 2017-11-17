@@ -1,4 +1,5 @@
 ﻿using System.Collections;
+using System.Linq;
 
 namespace Pruebas
 {
@@ -6,17 +7,7 @@ namespace Pruebas
     {
         public static int find_it(int[] seq)
         {
-            ArrayList numeros = new ArrayList(seq);
-            while (numeros.Capacity > 1)
-            {
-                if (numeros.IndexOf(numeros[0], 1) != -1)
-                {
-                    numeros.Remove(numeros.IndexOf(numeros[0], 1));
-                    numeros.Remove(0);
-                }
-                else return (int)numeros[0];
-            }
-            return 0;
+            return (from x in seq where seq.Count(a=>a==x) % 2 == 1 select x).First();
         }
     }
 }
