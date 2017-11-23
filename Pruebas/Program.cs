@@ -24,7 +24,7 @@ namespace Pruebas
                 //for (int i = 0; i < divi.Length; i++) num[i] = int.Parse(divi[i]);
                 
             }*/
-            Console.WriteLine(Reversed_Words.ReverseWords("hola majo"));
+            Console.WriteLine(Weight_for_weight.orderWeight("20 39 11"));
         }
         
     }
