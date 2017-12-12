@@ -74,6 +74,7 @@
     <Compile Include="5Kyu\Wo_lo_loooooo.cs" />
     <Compile Include="6Kyu\Array_diff.cs" />
     <Compile Include="6Kyu\CamelCase_Method.cs" />
+    <Compile Include="6Kyu\Digital_Root.cs" />
     <Compile Include="6Kyu\Find_the_odd_int.cs" />
     <Compile Include="6Kyu\Find_The_Parity_Outlier.cs" />
     <Compile Include="6Kyu\Message_from_Aliens.cs" />
